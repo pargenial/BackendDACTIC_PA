@@ -7,6 +7,8 @@ import 'dotenv/config';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  const newvariable = 10;
+
   const config = new DocumentBuilder()
     .setTitle('API CRUD _ TALLER UNI')
     .setDescription('CRUD basico demo de despliegue')
